@@ -4,32 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Aim Training</title>
+    <title>Aim Training Game</title>
   </head>
   <body>
     <div class="screen">
-      <h1>Aim Training</h1>
-      <a id="start" href="#" class="start">Начать игру</a>
+      <h1>Aim Training Game</h1>
+      <a id="start" href="#" class="start">Start the game</a>
     </div>
 
     <div class="screen">
-      <h1>Выберите время</h1>
+      <h1>Pick a time</h1>
       <ul id="time-list" class="time-list">
         <li>
-          <button class="time-btn" data-time="10">10 сек</button>
+          <button class="time-btn" data-time="10">10 sec</button>
         </li>
         <li>
-          <button class="time-btn" data-time="20">20 сек</button>
+          <button class="time-btn" data-time="20">20 sec</button>
         </li>
         <li>
-          <button class="time-btn" data-time="30">30 сек</button>
+          <button class="time-btn" data-time="30">30 sec</button>
         </li>
       </ul>
     </div>
 
-    <div class="screen">
-      <h3>Осталось <span id="time">00:00</span></h3>
+    <div id="last-screen" class="screen">
+      <h3>Remaining time: <span id="time">00:00</span></h3>
       <div class="board" id="board"></div>
+      <h3 id="score">Score: <span id="meter">0</span></h3>
     </div>
     <script src="script.js"></script>
   </body>
